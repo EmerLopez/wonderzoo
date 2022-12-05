@@ -33,12 +33,30 @@
                 <br />
                 <span class="auto-style2">Control de Usuarios</span><br />
                 <br />
+                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="idusuario" DataValueField="nombre">
+                </asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:wonderzooConnectionString %>" SelectCommand="SELECT [idusuario], [nombre] FROM [usuarios]"></asp:SqlDataSource>
             <br />
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="idusuario" DataSourceID="SqlDataSource2" Height="159px" Width="218px">
+                    <Columns>
+                        <asp:BoundField DataField="idusuario" HeaderText="idusuario" InsertVisible="False" ReadOnly="True" SortExpression="idusuario" />
+                        <asp:BoundField DataField="nombre" HeaderText="nombre" SortExpression="nombre" />
+                        <asp:BoundField DataField="clave" HeaderText="clave" SortExpression="clave" />
+                        <asp:BoundField DataField="nivel" HeaderText="nivel" SortExpression="nivel" />
+                    </Columns>
+                </asp:GridView>
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:wonderzooConnectionString %>" SelectCommand="SELECT [idusuario], [nombre], [clave], [nivel] FROM [usuarios] WHERE ([idusuario] = @idusuario)">
+                    <SelectParameters>
+                        <asp:ControlParameter ControlID="DropDownList1" Name="idusuario" PropertyName="SelectedValue" Type="Int32" />
+                    </SelectParameters>
+                </asp:SqlDataSource>
+                <br />
+                <br />
             <br />
             
                 </center>
             <br />
-            <a href="default"><input type="button" value="Volver" class="auto-style5"></a>
+            <a href="default"><input type="button" value="Volver" class="auto-style5" style="background-color: 204"></a>
             <br />
             <br />
             </div>

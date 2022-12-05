@@ -54,14 +54,21 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Inicio</a></li>
-                        <li><a runat="server" href="~/About">Acerca de</a></li>
-                        <li><a runat="server" href="~/terminos">Terminos</a></li>
-                        <li><a runat="server" href="~/reportar">Reportar</a></li>
-                        <li><a runat="server" href="~/Contact">UGB verde</a></li>
-                        <li><a runat="server" href="~/ayuda">Ayuda</a></li>
-                        <li><a runat="server" href="~/usuarios">Usuarios</a></li>
+                         <li><a runat="server" href="~/">Inicio</a></li>
+                        <li><a runat="server" href="~/About">Acerca de</a>
+                            <ul><li><a href="~/Contact">UGB verde</a></li></ul>
+                        </li>
+                        <li><a runat="server" href="~/terminos">Terminos</a>
+                            <ul><li><a runat="server" href="~/ayuda">Ayuda</a></li></ul>
+                        </li>
+                        <li><a runat="server" href="~/reportar">Reportar</a>
+                            <ul><li><a runat="server" href="~/usuarios">Usuarios</a></li></ul>
+                        </li>
+                        
+                                             
+
                     </ul>
+
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">

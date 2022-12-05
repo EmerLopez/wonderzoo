@@ -168,6 +168,7 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="anfibios.aspx" />
     <Content Include="Ayuda.aspx" />
+    <Content Include="carnivoros.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -188,6 +189,9 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Account\Web.config" />
+    <Content Include="herviboros.aspx" />
+    <Content Include="invertebrados.aspx" />
+    <Content Include="salvajes.aspx" />
     <Content Include="wz.ico" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="omnivoros.aspx" />
@@ -362,6 +366,13 @@
     <Compile Include="Ayuda.aspx.designer.cs">
       <DependentUpon>Ayuda.aspx</DependentUpon>
     </Compile>
+    <Compile Include="carnivoros.aspx.cs">
+      <DependentUpon>carnivoros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="carnivoros.aspx.designer.cs">
+      <DependentUpon>carnivoros.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -385,6 +396,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="herviboros.aspx.cs">
+      <DependentUpon>herviboros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="herviboros.aspx.designer.cs">
+      <DependentUpon>herviboros.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="omnivoros.aspx.cs">
@@ -415,6 +433,13 @@
     </Compile>
     <Compile Include="Reportar.aspx.designer.cs">
       <DependentUpon>Reportar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="salvajes.aspx.cs">
+      <DependentUpon>salvajes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="salvajes.aspx.designer.cs">
+      <DependentUpon>salvajes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Mobile.Master.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
@@ -458,6 +483,13 @@
     </Compile>
     <Compile Include="viviparos.aspx.designer.cs">
       <DependentUpon>viviparos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="invertebrados.aspx.cs">
+      <DependentUpon>invertebrados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="invertebrados.aspx.designer.cs">
+      <DependentUpon>invertebrados.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
